@@ -1,0 +1,143 @@
+/* Estilos para el cuerpo o body */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    background-size: cover;
+    background-position: center;
+    animation: slide 80s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url('../../Vista/img/1.jpg');
+    }
+    25% {
+        background-image: url('../../Vista/img/2.jpg');
+    }
+    50% {
+        background-image: url('../../Vista/img/3.jpg');
+    }
+    75% {
+        background-image: url('../../Vista/img/4.jpg');
+    }
+    100% {
+        background-image: url('../../Vista/img/3.jpg');
+    }
+}
+
+/* Estilo del header */
+header {
+    background-color: #1E3A5F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0px;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/*Estilos para la barra de navegacion */
+nav {
+    background-color: #2C4877;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 30px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #3A5A9D;
+    transform: scale(1.05);
+}
+
+/* Estilos para el enlace de inicio de sesión */
+.imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+    width: 150px;
+    margin: auto;
+}
+
+.imagen:hover {
+    transform: scale(1.05);
+    background-color: #f1f1f1;
+}
+
+.imagen svg {
+    margin-bottom: 10px;
+    fill: #1E3A5F;
+    transition: fill 0.3s;
+}
+
+.imagen div {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1E3A5F;
+}
+
+/* Estilo del pie de página */
+footer 
+{
+    background-color: #2C4877;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
